@@ -1,0 +1,68 @@
+You are a senior UI/UX designer and frontend engineer.
+
+Redesign my web app UI to look modern, premium, and professional, similar to high-end AI SaaS products.
+
+Project context:
+- App name: STYLE_AI
+- Purpose: AI-based style & color analyzer
+- Pages: Home, Style Analyzer, Color Guide, About
+- Target audience: Gen Z & young professionals
+- Theme: Dark mode primary, minimal, aesthetic, futuristic
+
+Design requirements:
+1. Overall Style
+   - Clean, modern, glassmorphism-inspired UI
+   - Smooth gradients, soft shadows, rounded corners
+   - Premium SaaS feel (like Notion, Linear, or Vercel)
+   - Dark background with subtle contrast (not pure black)
+
+2. Layout
+   - Left sidebar navigation with icons and smooth hover effects
+   - Top navbar showing logo "STYLE_AI" and page links
+   - Center content area with large rounded cards
+   - Proper spacing, padding, and alignment (no clutter)
+
+3. Typography
+   - Use modern fonts (Inter, Poppins, or similar)
+   - Clear visual hierarchy (headings bold, body light)
+   - Good line spacing and readable text contrast
+
+4. Home Page UI
+   - Hero card with headline: “Find Colors That Match Your Aura”
+   - Subtext explaining AI-based color analysis
+   - Call-to-action button: “Start Analyzing”
+   - Subtle background gradient or animated glow
+
+5. Style Analyzer Page
+   - Upload section with drag-and-drop image upload
+   - AI scan animation or progress indicator
+   - Result card showing:
+     - Skin tone
+     - Style type
+     - Suggested colors (color swatches)
+
+6. Color Guide Page
+   - Grid of color palettes
+   - Each palette inside a glassmorphic card
+   - Hover effects that highlight the palette
+
+7. Animations & Interactions
+   - Smooth hover effects
+   - Soft transitions between pages
+   - Button micro-interactions
+   - Fade-in animations for cards
+
+8. Tech Constraints
+   - Use HTML, CSS, and JavaScript (or React if needed)
+   - Clean, commented, and readable code
+   - Responsive for desktop and mobile
+   - No heavy libraries unless necessary
+
+Deliverables:
+- Fully styled UI layout
+- Modern color palette
+- Reusable components
+- Professional and presentation-ready design
+
+Do NOT generate placeholder-looking or basic layouts.
+Make it look like a real startup product.

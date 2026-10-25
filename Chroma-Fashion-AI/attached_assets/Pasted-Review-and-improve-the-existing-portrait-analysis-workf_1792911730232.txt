@@ -1,0 +1,73 @@
+Review and improve the existing portrait-analysis workflow.
+
+Image upload and validation
+
+Accept supported portrait image formats.
+
+Handle invalid, corrupted, oversized, and unsupported images gracefully.
+
+Validate image dimensions and reject unusable images with clear explanations.
+
+Normalize image orientation and convert supported image modes correctly.
+
+Provide useful feedback for dark, overexposed, blurry, or poorly framed portraits.
+
+Prevent stale analysis results from being displayed after an upload or analysis failure.
+
+Face detection
+
+Improve the existing face-detection implementation.
+
+Handle zero faces, multiple faces, and very small detected faces.
+
+Use a deterministic face-selection rule and explain it in the interface where appropriate.
+
+Validate face bounding boxes and crop dimensions before further processing.
+
+Never allow an invalid crop to crash the application.
+
+Skin-region extraction
+
+Review the current method for extracting skin colour from the detected face.
+
+Avoid relying solely on a rectangular crop of the centre of the face.
+
+Where practical, use facial landmarks or a suitable face-parsing approach to identify forehead and cheek regions.
+
+Exclude obvious non-skin regions, such as eyes, eyebrows, lips, hair, and background.
+
+If additional models or dependencies are unnecessary, implement a reasonable, maintainable improvement using the current stack.
+
+Handle insufficient valid skin pixels gracefully.
+
+Colour analysis
+
+Review the current RGB, HSV, and KMeans logic.
+
+Ensure that pixel sampling, clustering, and colour conversions are mathematically correct.
+
+Avoid unnecessary computation on very large images.
+
+Use robust statistics where appropriate to reduce the influence of shadows and outliers.
+
+Display the extracted dominant colour accurately and consistently.
+
+Clearly distinguish measured colour values from inferred classifications.
+
+Skin-tone and undertone classification
+
+Review the existing Light, Medium, and Dark skin-tone categories and Warm, Cool, and Neutral undertone categories.
+
+Replace arbitrary or overly simplistic thresholds with documented, maintainable classification logic.
+
+Make the classification as robust as reasonably possible within the project's scope.
+
+Evaluate edge cases and avoid pretending that colour-based rules can determine undertone with certainty.
+
+If proper labelled training data is unavailable, do not claim that the classifier has been scientifically validated.
+
+Explain that lighting, camera white balance, makeup, and image quality can affect results.
+
+Present classifications as estimates rather than objective facts about a person.
+
+Do not silently introduce an untrained deep-learning model or fabricate model accuracy.

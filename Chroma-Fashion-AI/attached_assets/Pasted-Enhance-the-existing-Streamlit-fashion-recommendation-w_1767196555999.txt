@@ -1,0 +1,62 @@
+Enhance the existing Streamlit fashion recommendation website by adding animations, confidence scores, shop-style product cards, and fake pricing.
+
+GLOBAL UI ENHANCEMENTS:
+- Add subtle CSS animations:
+  - Fade-in on page load
+  - Slide-up animation for cards
+  - Hover effects on buttons and product cards
+- Use CSS transitions for smooth UI interactions
+- Keep the Myntra / H&M inspired design aesthetic
+
+STYLE ANALYZER PAGE – NEW FEATURES:
+- After skin tone & undertone detection:
+  - Display a “Confidence Score” (randomized between 82%–95%)
+  - Show it as:
+    - Percentage text
+    - Progress bar or circular meter
+- Add a section titled:
+  “Shop Similar Colors”
+
+SHOP SIMILAR COLORS SECTION:
+- Display product-style cards in a grid (3–6 cards)
+- Each card must include:
+  - Outfit image (use fashion image URLs)
+  - Product name (e.g., “Olive Casual Shirt”)
+  - Color tag (e.g., Warm / Cool)
+  - Fake price (₹799, ₹1299, ₹1999 etc.)
+  - “Add to Wishlist ❤️” button (UI only)
+  - “View Similar” button (non-functional, visual only)
+- Pricing should look realistic like an Indian fashion site
+
+ANIMATION DETAILS:
+- Cards should slightly scale up on hover
+- Buttons should have hover color change
+- Confidence score should animate from 0% → final value
+
+HOME PAGE UPGRADES:
+- Add animated hero section text
+- Add a “Trending This Season” slider with outfit images
+- Add price tags on trending outfit cards
+
+COLOR GUIDE PAGE:
+- Add animated reveal when scrolling
+- Add mini product cards under each undertone section
+- Include “Best for Office / Casual / Festive” badges
+
+ABOUT PAGE:
+- Add animated feature cards:
+  - AI Powered
+  - Computer Vision
+  - Personalized Styling
+- Add a short “Future Scope” section
+
+TECHNICAL NOTES:
+- Use Streamlit + embedded HTML/CSS
+- Use st.markdown with unsafe_allow_html=True
+- Use session state for navigation
+- Keep everything in app.py
+- Ensure nothing breaks if no image is uploaded
+- Use opencv-python-headless only
+
+GOAL:
+Transform this project into a visually rich, animated, fashion e-commerce–style website with AI-powered personalization, suitable for academic evaluation and portfolio showcase.
